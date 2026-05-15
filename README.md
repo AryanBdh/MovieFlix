@@ -61,14 +61,14 @@ Visit [http://localhost:5173]
 
 ## Technologies & Learning
 
-✅ React Hooks for state management
-✅ Context API to avoid prop drilling
-✅ Custom hooks to abstract API logic
-✅ Tailwind CSS responsive design
-✅ React Router v6 for SPA navigation
-✅ TMDB API integration
-✅ localStorage for persistence
-✅ Component composition best practices
+- React Hooks for state management
+- Context API to avoid prop drilling
+- Custom hooks to abstract API logic
+- Tailwind CSS responsive design
+- React Router v6 for SPA navigation
+- TMDB API integration
+- localStorage for persistence
+- Component composition best practices
 
 ---
 
