@@ -55,7 +55,6 @@ Visit [http://localhost:5173]
 |-----------|----------|
 | **API 401 Errors** | Proper axios config with api_key query parameter |
 | **Prop Drilling** | SearchContext prevents passing through 4+ levels |
-| **Responsive Grid** | Tailwind: grid-cols-1 sm:2 md:3 lg:4 xl:5 |
 | **Favorites Persistence** | localStorage sync in context with JSON |
 | **Image Loading** | Skeleton cards + lazy loading attributes |
 
