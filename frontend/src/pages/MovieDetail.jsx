@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useMovieDetail } from '../hooks/useMovies';
 import { useFavorites } from '../context/FavoritesContext';
 import { poster, backdrop } from '../services/api';
+import SkeletonMovieDetail from '../components/SkeletonMovieDetail';
 
 export default function MovieDetail() {
   const { id } = useParams();
@@ -10,7 +11,7 @@ export default function MovieDetail() {
   const { movie, loading, error } = useMovieDetail(id);
   const { isFavorite, toggleFavorite } = useFavorites();
   
-  if (loading) return <div className="flex items-center justify-center min-h-screen">Loading...</div>;
+  if (loading) return <SkeletonMovieDetail />;
   if (error) return <div className="flex items-center justify-center min-h-screen text-red-600">{error}</div>;
   if (!movie) return <div className="flex items-center justify-center min-h-screen">Movie not found</div>;
   
